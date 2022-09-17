@@ -1,0 +1,26 @@
+<nav class="w-[100%] h-[70px] bg-[white] shadow-lg flex justify-between items-center px-[20px]">
+    <h1 class="text-2xl font-bold">Nisset <span class="text-[#ED5724]">S.R</span></h1>
+    <div class="cursor-pointer" (click)="toggle()">
+        <div *ngIf="active">
+            <img class="w-[30px] block sm:hidden duration-500" src="../../assets/images/menu.png" alt="">
+        </div>
+        <div *ngIf="!active">
+            <img class="w-[30px] block sm:hidden duration-500" src="../../assets/images/close.png" alt="">
+        </div>
+    </div>
+    <ul class="hidden sm:flex">
+        <li>
+            <a routerLinkActive="text-[#ED5724]" href="#" routerLink="home" class="p-[20px] font-semibold">Home</a>
+        </li>
+        <li>
+            <a routerLinkActive="text-[#ED5724]" href="#" routerLink="university" class="p-[20px] font-semibold">University</a>
+        </li>
+        <li>
+            <a routerLinkActive="text-[#ED5724]" href="#" routerLink="about-us" class="p-[20px] font-semibold">About US</a>
+        </li>
+
+    </ul>
+</nav>
+<div *ngIf="!active">
+    <app-mobile-navbar></app-mobile-navbar>
+</div>

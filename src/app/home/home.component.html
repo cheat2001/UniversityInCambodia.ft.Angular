@@ -1,0 +1,30 @@
+<div>
+    <!-- Welcome Block Start -->
+    <div class="w-[100%] h-[500px] shadow-md sm:flex-row flex flex-col  justify-center items-center sm:px-[50px] gap-10 md:gap-20 xl:justify-around">
+        <div>
+            <h1 class="text-xl text-[#ED5724] font-semibold">Welcome To Our Website</h1>
+            <p>Find the top university in Cambodia </p>
+            <p>and fulfill your ambition.</p>
+        </div>
+        <div>
+            <img class="w-[350px]" src="../../assets//images/welcome.gif" alt="">
+        </div>
+    </div>
+    <!-- Welcome Block End -->
+
+
+    <!-- University Block Start -->
+    <div class="w-[100%]  shadow-md flex flex-col items-center py-[50px]">
+        <h1 class="text-2xl mb-[20px] font-semibold">Cambodia's Best
+            <span class="text-[#ED5724]">Universities</span></h1>
+        <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 ">
+            <div *ngFor="let u of university ">
+                <app-card [school]="u "></app-card>
+            </div>
+        </div>
+
+        <a class="mt-10 underline" href="#">See All University</a>
+    </div>
+
+    <!-- Universtiy Block End -->
+</div>
