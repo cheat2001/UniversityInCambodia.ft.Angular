@@ -9,10 +9,15 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MobileNavbarComponent } from './mobile-navbar/mobile-navbar.component';
 import { CardComponent } from './card/card.component';
 import { FooterComponent } from './footer/footer.component';
+import { UniversityDetailComponent } from './university-detail/university-detail.component';
+import { RuppComponent } from './rupp/rupp.component';
+import { VandaComponent } from './vanda/vanda.component';
+import { ProfileComponent } from './profile/profile.component';
 const appRoute:Routes=[
   {path:'',redirectTo:'home',pathMatch: 'full'},
   {path:'home',component:HomeComponent},
   {path:'university',component:UniversityComponent},
+  {path:'university/:id',component:UniversityDetailComponent},
   {path:'about-us',component:AboutUsComponent}
 ]
 @NgModule({
@@ -24,7 +29,11 @@ const appRoute:Routes=[
     AboutUsComponent,
     MobileNavbarComponent,
     CardComponent,
-    FooterComponent
+    FooterComponent,
+    UniversityDetailComponent,
+    RuppComponent,
+    VandaComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

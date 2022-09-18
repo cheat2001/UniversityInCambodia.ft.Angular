@@ -1,13 +1,19 @@
 <div class="w-[300px] h-[300px] bg-[white] overflow-auto shadow-md flex flex-col text-center items-center">
     <div class="relative">
         <div class="w-[100%]">
-            <div class="w-[80%] h-[70%] absolute bg-[#00000049] left-[10%]">
+            <!-- <div class="w-[80%] h-[150px] absolute bg-[#00000049] left-[10%]">
 
-            </div>
-            <img [src]="school.coverImage" alt="" width="80%" class="mx-auto mt-2 object-contain">
+            </div> -->
+            <!-- <img [src]="school.coverImage" alt="" width="90%" class="mx-auto mt-2 object-contain">
         </div>
-        <img [src]="school.logo" width="80px" alt="" class="absolute bottom-0 left-[50%] translate-x-[-50%]">
+         -->
+
+            <div class="w-[280px] h-[150px]  mx-auto mt-2 overflow-hidden relative">
+                <img [src]="school.coverImage" alt="" width="100%" class=" object-contain">
+                <img [src]="school.logo" width="80px" alt="" class="absolute bottom-0 left-[50%] translate-x-[-50%]">
+            </div>
+
+        </div>
+        <h1 class="mt-3">{{school.name}}</h1>
+        <button routerLink="/university/{{school.id}}" class="bg-[#ED5724] px-2 py-1 mt-2 text-[white] rounded-md shadow-md active:scale-95">Learn More</button>
     </div>
-    <h1 class="">{{school.name}}</h1>
-    <button class="bg-[#ED5724] px-2 py-1 mt-2 text-[white] rounded-md shadow-md active:scale-95">Learn More</button>
-</div>

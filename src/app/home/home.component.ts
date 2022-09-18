@@ -13,19 +13,22 @@ export class HomeComponent implements OnInit {
   }
   university=[
     {
+    id:1,
     name:"Royal University of Cambodia",
     coverImage:"../../assets/images/rupp.jpg",
     logo:"../../assets/images/RUPP_logo.png"
   },
   {
-    name:"Royal University of Cambodia",
-    coverImage:"../../assets/images/rupp.jpg",
-    logo:"../../assets/images/RUPP_logo.png"
+    id:2,
+    name:"Institute of Technology of Cambodia",
+    coverImage:"../../assets/images/itcimage.jfif",
+    logo:"../../assets/images/ITC_logo.png"
   },
   {
-    name:"Royal University of Cambodia",
-    coverImage:"../../assets/images/rupp.jpg",
-    logo:"../../assets/images/RUPP_logo.png"
+    id:3,
+    name:"University of Health Sciences",
+    coverImage:"../../assets/images/uhs.jpg",
+    logo:"../../assets/images/UHS_Cambodia_logo.png"
   },
 
 ]

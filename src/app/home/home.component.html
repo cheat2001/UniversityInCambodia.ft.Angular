@@ -17,13 +17,13 @@
     <div class="w-[100%]  shadow-md flex flex-col items-center py-[50px]">
         <h1 class="text-2xl mb-[20px] font-semibold">Cambodia's Best
             <span class="text-[#ED5724]">Universities</span></h1>
-        <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 ">
+        <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10  xl:gap-[150px]">
             <div *ngFor="let u of university ">
                 <app-card [school]="u "></app-card>
             </div>
         </div>
 
-        <a class="mt-10 underline" href="#">See All University</a>
+        <a routerLink="/university" class="mt-10 underline" href="#">See All University</a>
     </div>
 
     <!-- Universtiy Block End -->

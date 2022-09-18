@@ -1,1 +1,12 @@
-<p>university works!</p>
+<div class="flex flex-col items-center">
+    <div>
+        <img src="../../assets/images/school-unscreen.gif" alt="">
+    </div>
+    <h1 class="text-2xl font-semibold">Cambodia's Best <span class="text-[#ED5724]">University</span></h1>
+    <p>Which university is right for you?</p>
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-14 mt-8">
+        <div *ngFor="let u of university">
+            <app-card [school]="u"></app-card>
+        </div>
+    </div>
+</div>
